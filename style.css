@@ -1,0 +1,33 @@
+@media(max-width:600px){
+h1{
+    border-bottom:5px solid mediumslateblue;
+    padding:20px;
+}
+ol{
+    border-right:5px solid darkcyan;
+    width:150px;
+    margin:10px;
+}
+#container{
+    display:grid;
+    grid-template-columns: 180px 1fr;
+}
+}
+
+@media(min-width:600px){
+    h1{
+        border-bottom:1px solid mediumslateblue;
+        padding:10px;
+        margin-bottom:0;
+    }
+    ol{
+        border-right:5px solid darkcyan;
+        width:150px;
+        margin:10px;
+    }
+    #container{
+        display:grid;
+        grid-template-columns: 180px 1fr;
+    }
+
+}
