@@ -5,6 +5,8 @@
     <title>WEB-nodejs</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+           
 </head>
 
 
@@ -20,29 +22,16 @@
         </ol>
         
         <div id="article">
-            <input type="button" id="sdfkh" value="night" onclick="
+            
+            <input type="button" value="night" onclick="
                 // 만약 이 버튼의 value 값이 night라면
                 if(this.value === 'night'){
-                    document.querySelector('body').style.backgroundColor = 'black';
-                    document.querySelector('body').style.color = 'white';  
+                    Color.toNight();
                     this.value = 'day';
 
-                    var links = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i<links.length){   
-                    links[i].style.color = 'white';
-                    i = i+1;}
-        
                 } else {// 아니라면
-                    document.querySelector('body').style.backgroundColor = 'white';
-                    document.querySelector('body').style.color = 'black';   
-                    this.value = 'night';
-
-                    var links = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i<links.length){   
-                    links[i].style.color = 'black';
-                    i = i+1;}
+                    Color.toDay();
+                    this.value = 'night'; 
                 }
             ">
             <h2>Database</h2>

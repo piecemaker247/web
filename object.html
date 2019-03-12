@@ -1,0 +1,45 @@
+<html>
+        <head>
+                <script src="script.js"></script>
+            
+            </head>
+<body>
+    <h1>Object</h1>
+    <script>
+        var arr = ['iron', 'bronze', 'silver', 'gold'];
+        console.log(arr[0]);
+    
+        var position = {
+            'top' : 'iron',
+            'mid' : 'bronze',
+            'jungle' : 'silver',
+            'AD' : 'gold',
+            'printAllmember' : function(){
+                console.log(this.top);
+                console.log(this.jungle);
+                console.log(this.mid);
+                console.log(this.AD);
+
+            }
+        }
+        console.log(position.printAllmember());
+        
+    </script>
+<div id="article">
+            
+        <input type="button" value="night" onclick="
+            // 만약 이 버튼의 value 값이 night라면
+            if(this.value === 'night'){
+                Color.toNight();
+                this.value = 'day';
+
+            } else {// 아니라면
+                Color.toDay();
+                this.value = 'night'; 
+            }
+        ">   
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+     function one_plus_one(){
+        var left=1;
+        var right=1;
+        alert(left+right);
+     }
+    
+     function sum(left,right){
+        alert(left+right);
+
+     }
+
+    </script>
+    <div id="article">
+            
+            <input type="button" value="night" onclick="
+                // 만약 이 버튼의 value 값이 night라면
+                if(this.value === 'night'){
+                    Color.toNight();
+                    this.value = 'day';
+
+                } else {// 아니라면
+                    Color.toDay();
+                    this.value = 'night'; 
+                }
+            ">
+    <input type = "button" value = "1+2" onclick="
+       sum(1,2);
+    ">
+
+    <input type = "button" value = "2+3" onclick="
+        sum(2,3);
+    ">
+
+    <input type = "button" value = "3+4" onclick="
+       sum(3,4);
+    ">
+</body>
+</html>
